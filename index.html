@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Consultable Labs: Purpose Driven Consulting</title>
+  <meta name="description" content="Consultable Labs develops solutions built around your destination — your goals and objectives — across tech, AI, logistics, and labor. We optimize workflows and help leaders achieve measurable, sustainable growth.">
+  <link rel="canonical" href="https://consultablelabs.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://consultablelabs.com/">
+  <meta property="og:site_name" content="Consultable Labs">
+  <meta property="og:title" content="Consultable Labs: Purpose Driven Consulting">
+  <meta property="og:description" content="Purpose-powered strategy, next levels of growth &amp; clarity. Organizational audits, process optimization, and leadership coaching that deliver measurable results.">
+  <meta property="og:image" content="https://framerusercontent.com/images/fwhqG03zmpiJ9yMcAtxyEH17kA.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Consultable Labs: Purpose Driven Consulting">
+  <meta name="twitter:description" content="Purpose-powered strategy, next levels of growth &amp; clarity. Business consulting with measurable results.">
+  <meta name="twitter:image" content="https://framerusercontent.com/images/fwhqG03zmpiJ9yMcAtxyEH17kA.jpg">
+
+  <link rel="icon" href="https://framerusercontent.com/images/iHIYURalbxT2OY6NiDtMQbhBf4.png">
+  <link rel="preload" as="image" href="https://framerusercontent.com/images/fwhqG03zmpiJ9yMcAtxyEH17kA.jpg?scale-down-to=2048" fetchpriority="high">
+
+  <!-- Fonts: Geist (site-wide) + Inter italic (accent words), matching the original -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&family=Inter:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Consultable Labs",
+    "url": "https://consultablelabs.com/",
+    "description": "Consultancy developing goal-driven solutions across technology, AI, logistics, and labor — optimizing workflows and helping leaders achieve measurable, sustainable growth.",
+    "email": "inquiry@consultablelabs.com",
+    "telephone": "+1-951-239-0523",
+    "address": { "@type": "PostalAddress", "addressLocality": "Raleigh", "addressCountry": "US" },
+    "areaServed": "US",
+    "serviceType": ["Full Organization Overhaul", "Organizational Audits", "Process Optimization", "Leadership Coaching", "AI & Technology Consulting", "Logistics & Workflow Optimization"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How do I get started with Consultable Labs?", "acceptedAnswer": { "@type": "Answer", "text": "Just fill out the contact form and we’ll schedule a free consultation to understand your organization, needs, and goals." } },
+      { "@type": "Question", "name": "What services do you offer?", "acceptedAnswer": { "@type": "Answer", "text": "We offer full organizational overhauls, organizational audits, process optimization, leadership coaching, and custom packages tailored to your needs." } },
+      { "@type": "Question", "name": "How long does a typical engagement last?", "acceptedAnswer": { "@type": "Answer", "text": "Most engagements last between four and twelve weeks depending on scope — audits are typically shorter, while full transformations and ongoing coaching run longer." } },
+      { "@type": "Question", "name": "What areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We’re based in Raleigh and work with clients remotely across the United States, with on-site engagements available where the work calls for it." } },
+      { "@type": "Question", "name": "Do you offer customized solutions?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — every engagement is scoped to your organization. If none of our packages fit, we’ll design one that does." } },
+      { "@type": "Question", "name": "How do you measure success?", "acceptedAnswer": { "@type": "Answer", "text": "We agree on concrete metrics before work begins and report against them throughout the engagement — so results are measurable, not anecdotal." } }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ===== Design tokens (extracted from the original Framer site) ===== */
+    :root {
+      --orange: rgb(234, 88, 12);
+      --chip-bg: rgb(255, 247, 237);
+      --purple: rgb(168, 113, 227);
+      --black: rgb(0, 0, 0);
+      --near-black: rgb(10, 10, 10);
+      --dark: rgb(23, 23, 23);
+      --gray-800: rgb(38, 38, 38);
+      --gray-700: rgb(64, 64, 64);
+      --gray-600: rgb(82, 82, 82);
+      --gray-400: rgb(163, 163, 163);
+      --gray-300: rgb(212, 212, 212);
+      --gray-200: rgb(229, 229, 229);
+      --gray-100: rgb(245, 245, 245);
+      --off-white: rgb(250, 250, 250);
+      --white: rgb(255, 255, 255);
+      --font: "Geist", "Geist Placeholder", sans-serif;
+      --font-italic: "Inter", sans-serif;
+    }
+    /* The original template swaps the accent to purple in dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root { --orange: #7509e8; --chip-bg: #fbedff; }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--off-white);
+      color: var(--near-black);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    ::selection { background: var(--orange); color: #fff; }
+
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+    @media (max-width: 640px) { .wrap { padding: 0 20px; } }
+
+    /* ===== Typography presets (matching Framer presets) ===== */
+    h1 { font-size: 50px; font-weight: 500; letter-spacing: -.04em; line-height: 120%; }
+    h2 { font-size: 40px; font-weight: 500; letter-spacing: -.04em; line-height: 120%; }
+    h4 { font-size: 24px; font-weight: 500; letter-spacing: -.02em; line-height: 120%; }
+    p  { font-size: 16px; font-weight: 400; line-height: 150%; }
+    em { font-family: var(--font-italic); font-style: italic; font-weight: 500; letter-spacing: -.02em; }
+    .accent { color: var(--orange); }
+    @media (max-width: 809px) {
+      h1 { font-size: 36px; }
+      h2 { font-size: 36px; }
+      h4 { font-size: 19px; }
+    }
+    @media (max-width: 480px) { h2 { font-size: 30px; } }
+
+    /* ===== Eyebrow chip ===== */
+    .chip {
+      display: inline-block;
+      font-size: 14px; font-weight: 500; letter-spacing: .05em; line-height: 150%;
+      color: var(--orange);
+      background: var(--chip-bg);
+      border: 1px solid var(--orange);
+      border-radius: 999px;
+      padding: 6px 16px;
+      margin-bottom: 20px;
+    }
+
+    /* ===== Buttons (pill + orange circle icon, as in the original) ===== */
+    .btn {
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 8px 8px 8px 26px;
+      border-radius: 999px;
+      font-family: var(--font);
+      font-size: 18px; font-weight: 500;
+      cursor: pointer;
+      transition: transform .3s cubic-bezier(.3,.7,.3,1), box-shadow .3s, background .3s, border-color .3s;
+      border: 1px solid rgba(250, 250, 250, 0.5);
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0) scale(.98); }
+    .btn .circ {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--orange);
+      display: grid; place-items: center;
+      flex: none;
+      transition: transform .35s cubic-bezier(.3,.7,.3,1);
+      overflow: hidden;
+    }
+    .btn .circ svg { transition: transform .35s cubic-bezier(.3,.7,.3,1); }
+    .btn:hover .circ { transform: scale(1.08); }
+    .btn:hover .circ svg { transform: translateX(2px); }
+    .btn-light { background: var(--off-white); color: var(--near-black); }
+    .btn-light:hover { box-shadow: 0 14px 30px -12px rgba(0,0,0,.45); }
+    .btn-dark { background: var(--near-black); color: var(--off-white); border-color: rgba(10,10,10,.5); }
+    .btn-dark:hover { box-shadow: 0 14px 30px -12px rgba(10,10,10,.5); }
+    .btn-outline { background: transparent; color: var(--off-white); }
+    .btn-outline:hover { background: rgba(250,250,250,.1); }
+
+    /* ===== Scroll-appear animation (Framer-style: fade + rise 50px) ===== */
+    .fx {
+      opacity: 0; transform: translateY(50px);
+      transition: opacity .9s cubic-bezier(.2,.65,.25,1), transform .9s cubic-bezier(.2,.65,.25,1);
+      transition-delay: var(--d, 0s);
+    }
+    .fx.in { opacity: 1; transform: none; }
+
+    /* Hero word reveal (Framer-style: blur + rise per word) */
+    .word {
+      display: inline-block;
+      opacity: 0; filter: blur(10px); transform: translateY(20px);
+      transition: opacity .8s ease, filter .8s ease, transform .8s cubic-bezier(.2,.65,.25,1);
+      transition-delay: var(--wd, 0s);
+    }
+    .words-in .word { opacity: 1; filter: blur(0); transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .fx, .word { opacity: 1; transform: none; filter: none; transition: none; }
+    }
+
+    /* ===== Nav ===== */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 20px 0;
+      transition: background .4s, padding .4s, box-shadow .4s;
+    }
+    header.solid {
+      background: rgba(10, 10, 10, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 12px 0;
+      box-shadow: 0 1px 0 rgba(255,255,255,.08);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .nav .logo img {
+      width: 203px; height: 80px; object-fit: cover;
+      transition: height .4s, width .4s;
+    }
+    header.solid .nav .logo img { width: 163px; height: 64px; }
+    @media (max-width: 480px) { .nav .logo img { width: 152px; height: 60px; } }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a {
+      font-size: 18px; font-weight: 400; color: var(--off-white);
+      position: relative; transition: opacity .2s;
+    }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; bottom: -6px;
+      width: 100%; height: 1.5px; background: var(--orange);
+      transform: scaleX(0); transform-origin: right;
+      transition: transform .35s cubic-bezier(.3,.7,.3,1);
+    }
+    .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
+    .nav-toggle { display: none; }
+    .mobile-menu {
+      position: fixed; inset: 0; z-index: 99;
+      background: rgba(10,10,10,.96);
+      display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px;
+      opacity: 0; pointer-events: none; visibility: hidden;
+      transition: opacity .35s, visibility .35s;
+    }
+    .mobile-menu.open { opacity: 1; pointer-events: auto; visibility: visible; }
+    .mobile-menu a {
+      color: var(--off-white); font-size: 28px; font-weight: 500; letter-spacing: -.02em;
+      padding: 12px;
+    }
+    .mobile-menu .btn { margin-top: 20px; font-size: 18px; }
+
+    /* ===== Hero ===== */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 160px 0 64px;
+      color: var(--off-white);
+      overflow: hidden;
+    }
+    .hero-bg { position: absolute; inset: 0; z-index: -2; }
+    .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(0deg, rgba(10,10,10,.85) 0%, rgba(10,10,10,.35) 55%, rgba(10,10,10,.45) 100%);
+    }
+    .hero h6.eyebrow {
+      color: var(--purple);
+      font-size: 16px; font-weight: 500; letter-spacing: .05em; line-height: 150%;
+      margin-bottom: 16px;
+    }
+    .hero h1 { max-width: 760px; }
+    .hero-bottom {
+      margin-top: 48px;
+      display: flex; justify-content: space-between; align-items: flex-end; gap: 40px;
+    }
+    .hero-left { max-width: 520px; }
+    .hero-left p { color: var(--gray-300); font-size: 18px; margin-bottom: 28px; }
+    .hero-review {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px;
+      padding: 22px 24px;
+      max-width: 400px;
+    }
+    .hero-review .stars { display: flex; gap: 4px; margin-bottom: 12px; }
+    .hero-review .stars svg { width: 18px; height: 18px; fill: var(--orange); }
+    .hero-review p.quote { color: var(--gray-200); font-size: 15px; }
+    .hero-review p.who { color: var(--white); font-size: 14px; font-weight: 500; margin-top: 12px; }
+
+    /* ===== Sections shared ===== */
+    section { padding: 110px 0; }
+    .sec-head-sub { color: var(--gray-600); }
+
+    /* ===== About ===== */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+    }
+    .collage { display: grid; grid-template-columns: 1.25fr 1fr; grid-template-rows: 1fr 1fr; gap: 16px; }
+    .collage .im { border-radius: 16px; overflow: hidden; position: relative; }
+    .collage .im img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .7s cubic-bezier(.2,.65,.25,1);
+    }
+    .collage .im:hover img { transform: scale(1.05); }
+    .collage .im.tall { grid-row: span 2; min-height: 460px; }
+    .collage .im.sm { min-height: 220px; }
+    .about-copy h2 { margin-bottom: 24px; }
+    .about-copy p { color: var(--gray-600); }
+    .about-copy p + p { margin-top: 16px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .tags span {
+      font-size: 14px; font-weight: 500; letter-spacing: .02em;
+      color: var(--gray-600);
+      border: 1px solid var(--gray-300);
+      border-radius: 999px;
+      padding: 7px 16px;
+      transition: color .25s, border-color .25s, transform .25s;
+    }
+    .tags span:hover { color: var(--orange); border-color: var(--orange); transform: translateY(-2px); }
+
+    /* ===== Services ===== */
+    .services { background: var(--gray-100); }
+    .svc-head {
+      display: flex; justify-content: space-between; align-items: flex-end; gap: 48px;
+      margin-bottom: 56px;
+    }
+    .svc-head h2 { max-width: 560px; }
+    .svc-head-right { max-width: 440px; }
+    .svc-head-right p { color: var(--gray-600); margin-bottom: 24px; }
+    .svc-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
+    .card {
+      position: relative; border-radius: 16px; overflow: hidden;
+      display: flex; align-items: flex-end;
+      min-height: 380px;
+      grid-column: span 3;
+    }
+    .card:nth-child(n+3) { grid-column: span 2; min-height: 330px; }
+    .card img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      transition: transform .8s cubic-bezier(.2,.65,.25,1);
+    }
+    .card:hover img { transform: scale(1.06); }
+    .card .shade {
+      position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgb(23,23,23) 0%, rgba(23,23,23,0) 60%);
+      transition: opacity .5s;
+    }
+    .card .card-txt { position: relative; padding: 28px; }
+    .card h4 { color: var(--gray-100); margin-bottom: 8px; }
+    .card p { color: var(--gray-300); max-width: 40ch; }
+
+    /* ===== CTA ===== */
+    .cta {
+      position: relative; text-align: center; color: var(--off-white);
+      padding: 150px 0; overflow: hidden;
+    }
+    .cta-bg { position: absolute; inset: 0; z-index: -2; }
+    .cta-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .cta-overlay { position: absolute; inset: 0; z-index: -1; background: rgba(10,10,10,.72); }
+    .cta h2 { max-width: 640px; margin: 0 auto 20px; }
+    .cta .sub { color: var(--gray-200); max-width: 560px; margin: 0 auto 36px; }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ===== FAQ ===== */
+    .faq .head { text-align: center; max-width: 640px; margin: 0 auto 56px; }
+    .faq .head h2 { margin-bottom: 16px; }
+    .faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: 14px; }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .faq-item.open { border-color: color-mix(in srgb, var(--orange) 40%, transparent); box-shadow: 0 10px 30px -18px rgba(0,0,0,.15); }
+    .faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 20px;
+      padding: 24px 28px;
+      font-family: var(--font); font-size: 18px; font-weight: 500; text-align: left;
+      color: var(--near-black);
+    }
+    .plus { position: relative; width: 18px; height: 18px; flex: none; }
+    .plus::before, .plus::after {
+      content: ""; position: absolute; background: var(--black);
+      transition: transform .4s cubic-bezier(.3,.7,.3,1), background .3s;
+    }
+    .plus::before { left: 0; top: 8px; width: 18px; height: 2px; }
+    .plus::after { left: 8px; top: 0; width: 2px; height: 18px; }
+    .faq-item.open .plus::before, .faq-item.open .plus::after { background: var(--orange); }
+    .faq-item.open .plus::after { transform: rotate(90deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .5s cubic-bezier(.3,.7,.3,1); }
+    .faq-a p { padding: 0 28px 26px; color: var(--gray-600); max-width: 62ch; }
+
+    /* ===== Contact ===== */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 72px; align-items: start; }
+    .contact-left h2 { margin-bottom: 16px; }
+    .contact-left .sub { color: var(--gray-600); margin-bottom: 32px; }
+    .contact-visual { border-radius: 16px; overflow: hidden; margin-bottom: 32px; }
+    .contact-visual img { width: 100%; height: 260px; object-fit: cover; transition: transform .7s cubic-bezier(.2,.65,.25,1); }
+    .contact-visual:hover img { transform: scale(1.04); }
+    .c-item { display: flex; align-items: center; gap: 18px; padding: 10px 0; }
+    .c-item .ibox {
+      width: 48px; height: 48px; border-radius: 12px; flex: none;
+      background: var(--orange); color: #fff;
+      display: grid; place-items: center;
+      transition: transform .3s cubic-bezier(.3,.7,.3,1);
+    }
+    .c-item:hover .ibox { transform: scale(1.08) rotate(-4deg); }
+    .c-item h3 { font-size: 18px; font-weight: 500; color: var(--gray-800); }
+    .c-item p { color: var(--gray-600); }
+
+    .form-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: 20px; padding: 36px;
+    }
+    .field { margin-bottom: 20px; }
+    .field label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+    .field label .req { color: var(--orange); }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      font-family: var(--font); font-size: 15px;
+      padding: 13px 16px;
+      border: 1px solid var(--gray-200); border-radius: 10px;
+      background: var(--off-white); color: var(--near-black);
+      outline: none;
+      transition: border-color .25s, box-shadow .25s;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--orange) 15%, transparent);
+    }
+    .field textarea { min-height: 120px; resize: vertical; }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-card .btn { width: 100%; justify-content: space-between; margin-top: 6px; }
+
+    /* ===== Footer ===== */
+    footer { background: var(--near-black); color: var(--white); padding: 90px 0 36px; }
+    .foot-top {
+      display: flex; justify-content: space-between; gap: 60px; flex-wrap: wrap;
+      margin-bottom: 70px;
+    }
+    .foot-brand h3 { font-size: 28px; font-weight: 500; letter-spacing: -.02em; line-height: 130%; margin-bottom: 28px; }
+    .foot-cols { display: flex; gap: 80px; flex-wrap: wrap; }
+    .foot-col p.t { font-size: 16px; font-weight: 500; margin-bottom: 20px; color: var(--white); }
+    .foot-col ul { list-style: none; display: grid; gap: 12px; }
+    .foot-col a, .foot-col li { color: var(--gray-300); font-size: 16px; transition: color .2s; }
+    .foot-col a:hover { color: var(--orange); }
+    .socials { display: flex; gap: 12px; margin-top: 28px; }
+    .socials a {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--gray-700);
+      display: grid; place-items: center;
+      transition: background .3s, transform .3s;
+    }
+    .socials a:hover { background: var(--orange); transform: translateY(-3px); }
+    .socials svg { width: 18px; height: 18px; fill: #fff; }
+    .foot-divider {
+      height: 1px; margin-bottom: 28px;
+      background: linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--orange) 40%, transparent) 50%, transparent 100%);
+    }
+    .foot-bottom {
+      display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+      color: var(--gray-400); font-size: 14px;
+    }
+    .foot-bottom .sep { color: var(--gray-200); }
+    .foot-bottom a { color: var(--gray-200); transition: color .2s; }
+    .foot-bottom a:hover { color: var(--orange); }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1000px) {
+      .svc-head { flex-direction: column; align-items: flex-start; }
+      .card, .card:nth-child(n+3) { grid-column: span 6; min-height: 300px; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-bottom { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 809px) {
+      section { padding: 80px 0; }
+      .nav-links { display: none; }
+      .nav .btn { display: none; }
+      .nav-toggle {
+        display: grid; place-items: center;
+        width: 44px; height: 44px; border-radius: 12px;
+        background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25);
+        cursor: pointer;
+      }
+      .field-row { grid-template-columns: 1fr; }
+      .form-card { padding: 24px; }
+      .foot-cols { gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header id="header">
+    <div class="wrap nav">
+      <a class="logo" href="#top" aria-label="Consultable Labs — home">
+        <img src="https://framerusercontent.com/images/mkdO1Tmnojgsc1NO7wLHLIF1VE.png?scale-down-to=512" alt="Consultable Labs" width="203" height="80">
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-light" href="#contact">
+        Contact Us
+        <span class="circ"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="#fafafa" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#faq">FAQs</a>
+    <a class="btn btn-light" href="#contact">Contact Us
+      <span class="circ"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ SECTION 1 / HERO ============ -->
+    <section class="hero" aria-label="Introduction" style="padding-top:160px">
+      <div class="hero-bg"><img src="https://framerusercontent.com/images/fwhqG03zmpiJ9yMcAtxyEH17kA.jpg?scale-down-to=2048" alt="City buildings near a body of water" fetchpriority="high"></div>
+      <div class="hero-overlay"></div>
+      <div class="wrap">
+        <h6 class="eyebrow fx">scale faster &amp; achieve measurable results</h6>
+        <h1 id="heroTitle" aria-label="Purpose-Powered Strategy, Next Levels of Growth & Clarity.">
+          <span class="word" style="--wd:.05s">Purpose-Powered</span>
+          <span class="word" style="--wd:.15s">Strategy,</span><br>
+          <em><span class="word" style="--wd:.25s">Next</span> <span class="word" style="--wd:.33s">Levels</span></em>
+          <span class="word" style="--wd:.41s">of</span>
+          <span class="word" style="--wd:.49s">Growth</span>
+          <span class="word" style="--wd:.57s">&amp;</span>
+          <span class="word" style="--wd:.65s">Clarity.</span>
+        </h1>
+        <div class="hero-bottom">
+          <div class="hero-left fx" style="--d:.55s">
+            <p>Consultable Labs is a <em>results-driven</em> business consultancy <em>helping</em> leaders <em>navigate</em> complexity, <em>refine</em> strategy, and <em>achieve</em> sustainable growth.</p>
+            <a class="btn btn-light" href="#contact">
+              Request Free Quote
+              <span class="circ"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+          </div>
+          <figure class="hero-review fx" style="--d:.75s">
+            <div class="stars" aria-label="5 star review">
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            </div>
+            <p class="quote">“Surprised at the level of speed and diligence this team works at — very helpful data and recommendations, an organized report, and easy to work with.”</p>
+            <figcaption><p class="who">— Hamad, Raleigh</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2 / ABOUT ============ -->
+    <section id="about" aria-labelledby="about-h">
+      <div class="wrap about-grid">
+        <div class="collage">
+          <div class="im tall fx"><img src="https://framerusercontent.com/images/awQ91PQxRi5gNYZMIgflYXP4l8.jpg?scale-down-to=1024" alt="Analyst reviewing data on a monitoring screen" loading="lazy"></div>
+          <div class="im sm fx" style="--d:.15s"><img src="https://framerusercontent.com/images/M1Jh3XvpwweNwWfIi457BwEfjxo.jpg?scale-down-to=1024" alt="Consultant presenting strategy on a whiteboard" loading="lazy"></div>
+          <div class="im sm fx" style="--d:.3s"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop" alt="Logistics warehouse with organized inventory shelving" loading="lazy"></div>
+        </div>
+        <div class="about-copy">
+          <span class="chip fx">About Consultable Labs</span>
+          <h2 id="about-h" class="fx" style="--d:.1s">Transforming Organizations with <span class="accent">Vision, Planning, and Precision.</span></h2>
+          <p class="fx" style="--d:.2s">At Consultable Labs, everything starts with your destination. We take your goals and objectives and work backward from them — developing the solutions that get you there, whether that means technology, AI, logistics, labor, or all of the above.</p>
+          <p class="fx" style="--d:.3s">Then we sweat the details: optimizing workflows, streamlining systems, and building processes that carry your organization forward — with measurable results you can point to. Based in Raleigh and serving leaders across the United States, we’re more than just a consulting firm; we’re a partner in your growth.</p>
+          <div class="tags fx" style="--d:.4s" aria-label="Areas we work in">
+            <span>Technology</span><span>AI</span><span>Logistics</span><span>Labor &amp; Operations</span><span>Workflow Optimization</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 3 / SERVICES ============ -->
+    <section id="services" class="services" aria-labelledby="services-h">
+      <div class="wrap">
+        <div class="svc-head">
+          <div>
+            <span class="chip fx">Our Services</span>
+            <h2 id="services-h" class="fx" style="--d:.1s">Custom <span class="accent"><em>Curated</em></span> Packages Designed to Fit Your Business</h2>
+          </div>
+          <div class="svc-head-right fx" style="--d:.2s">
+            <p>Tell us the destination — we build the route. From diagnosis to delivery, we develop solutions around your goals across tech, AI, logistics, and labor. Whether you’re optimizing one workflow or transforming the entire company, we’ve got you covered.</p>
+            <a class="btn btn-dark" href="#contact">
+              Request Free Quote
+              <span class="circ"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+          </div>
+        </div>
+        <div class="svc-grid">
+          <article class="card fx">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop" alt="Team working together on laptops around a shared table" loading="lazy">
+            <div class="shade"></div>
+            <div class="card-txt">
+              <h4>Full Organization Overhaul</h4>
+              <p>Complete organizational transformations tailored to your goals and needs.</p>
+            </div>
+          </article>
+          <article class="card fx" style="--d:.12s">
+            <img src="https://framerusercontent.com/images/cjRR1Ssh7HNarcSqiHBa4XK6Us.jpg?scale-down-to=1024" alt="Consultant taking notes next to a laptop" loading="lazy">
+            <div class="shade"></div>
+            <div class="card-txt">
+              <h4>Organizational Audits</h4>
+              <p>Detailed analysis of the current standing of a company in relation to its goals.</p>
+            </div>
+          </article>
+          <article class="card fx">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop" alt="Laptop displaying analytics dashboards and performance charts" loading="lazy">
+            <div class="shade"></div>
+            <div class="card-txt">
+              <h4>Process Optimization</h4>
+              <p>Advanced, functional systems with lasting impact.</p>
+            </div>
+          </article>
+          <article class="card fx" style="--d:.12s">
+            <img src="https://framerusercontent.com/images/gEdl52JRUKoY0N4Ctl5X9GTVDD0.jpg?scale-down-to=1024" alt="Team silhouetted on a hilltop" loading="lazy">
+            <div class="shade"></div>
+            <div class="card-txt">
+              <h4>Leadership Coaching</h4>
+              <p>Gain valuable skill sets and guide your transformation.</p>
+            </div>
+          </article>
+          <article class="card fx" style="--d:.24s">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop" alt="Two business partners shaking hands" loading="lazy">
+            <div class="shade"></div>
+            <div class="card-txt">
+              <h4>Custom Package</h4>
+              <p>Book a session to see what we can aid you with.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5 / CTA ============ -->
+    <section class="cta" aria-labelledby="cta-h">
+      <div class="cta-bg"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2400&auto=format&fit=crop" alt="Consultants collaborating in a modern open office" loading="lazy"></div>
+      <div class="cta-overlay"></div>
+      <div class="wrap">
+        <span class="chip fx">Book Now</span>
+        <h2 id="cta-h" class="fx" style="--d:.1s">Ready to Start Your <span class="accent"><em>Consultation?</em></span></h2>
+        <p class="sub fx" style="--d:.2s">Let’s bring your company’s potential to life with clarity, precision, and purpose. Whether it’s a full transformation or a custom package, Consultable Labs makes the process seamless.</p>
+        <div class="cta-btns fx" style="--d:.3s">
+          <a class="btn btn-light" href="#contact">
+            Request Free Quote
+            <span class="circ"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+          <a class="btn btn-outline" href="tel:+19512390523">
+            Call Us Now
+            <span class="circ"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 7 / FAQ ============ -->
+    <section id="faq" class="faq" aria-labelledby="faq-h">
+      <div class="wrap">
+        <div class="head">
+          <span class="chip fx">FAQs</span>
+          <h2 id="faq-h" class="fx" style="--d:.1s">Frequently Asked <span class="accent"><em>Questions</em></span></h2>
+          <p class="sec-head-sub fx" style="--d:.2s">We know organizational change comes with big questions. Here are answers to the ones we hear most — so you can feel confident from the start.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item open fx">
+            <button class="faq-q" aria-expanded="true">How do I get started with Consultable Labs? <span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>Just fill out the contact form and we’ll schedule a free consultation to understand your organization, needs, and goals.</p></div>
+          </div>
+          <div class="faq-item fx" style="--d:.08s">
+            <button class="faq-q" aria-expanded="false">What services do you offer? <span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>We offer full organizational overhauls, organizational audits, process optimization, and leadership coaching — spanning technology, AI, logistics, and labor — plus custom packages tailored to your needs. Every solution is developed from your destination: the goals and objectives you’re working toward.</p></div>
+          </div>
+          <div class="faq-item fx" style="--d:.16s">
+            <button class="faq-q" aria-expanded="false">How long does a typical engagement last? <span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>Most engagements last between four and twelve weeks depending on scope — audits are typically shorter, while full transformations and ongoing coaching run longer.</p></div>
+          </div>
+          <div class="faq-item fx" style="--d:.24s">
+            <button class="faq-q" aria-expanded="false">What areas do you serve? <span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>We’re based in Raleigh and work with clients remotely across the United States, with on-site engagements available where the work calls for it.</p></div>
+          </div>
+          <div class="faq-item fx" style="--d:.32s">
+            <button class="faq-q" aria-expanded="false">Do you offer customized solutions? <span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>Yes — customization is the whole point. We start from your destination and develop the solution backward from it, so every engagement is scoped to your organization. If none of our packages fit, we’ll design one that does.</p></div>
+          </div>
+          <div class="faq-item fx" style="--d:.4s">
+            <button class="faq-q" aria-expanded="false">How do you measure success? <span class="plus" aria-hidden="true"></span></button>
+            <div class="faq-a"><p>We agree on concrete metrics before work begins and report against them throughout the engagement — so results are measurable, not anecdotal.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 8 / CONTACT ============ -->
+    <section id="contact" aria-labelledby="contact-h">
+      <div class="wrap contact-grid">
+        <div class="contact-left">
+          <span class="chip fx">Request a Quote</span>
+          <h2 id="contact-h" class="fx" style="--d:.1s">Let’s Talk <span class="accent"><em>Change</em></span></h2>
+          <p class="sub fx" style="--d:.2s">Have a question in mind? Fill out the form and we’ll get in touch within 24 hours to discuss your project.</p>
+          <div class="contact-visual fx" style="--d:.25s">
+            <img src="https://framerusercontent.com/images/XEshrDSuOQuFCbdgqYwUdEiwWJI.jpg?scale-down-to=1024" alt="Two consultants in conversation" loading="lazy">
+          </div>
+          <a class="c-item fx" style="--d:.3s" href="tel:+19512390523">
+            <span class="ibox"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span><h3>Call Us Now</h3><p>+1 (951) 239-0523</p></span>
+          </a>
+          <a class="c-item fx" style="--d:.35s" href="mailto:inquiry@consultablelabs.com">
+            <span class="ibox"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="#fff" stroke-width="2"/><path d="m2 7 10 6L22 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span><h3>Email Us</h3><p>inquiry@consultablelabs.com</p></span>
+          </a>
+        </div>
+        <form class="form-card fx" style="--d:.2s" id="quoteForm">
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Full Name <span class="req">*</span></label>
+              <input id="f-name" name="name" type="text" placeholder="Jane Smith" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email Address <span class="req">*</span></label>
+              <input id="f-email" name="email" type="email" placeholder="jane@company.com" required>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-phone">Phone Number (optional)</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="Phone Number">
+            </div>
+            <div class="field">
+              <label for="f-loc">Project Location <span class="req">*</span></label>
+              <input id="f-loc" name="location" type="text" placeholder="City, State" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-type">Type of Project <span class="req">*</span></label>
+            <select id="f-type" name="type" required>
+              <option value="" selected disabled>Select…</option>
+              <option>Direction</option>
+              <option>Optimization</option>
+              <option>Culture</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Message / Project Brief</label>
+            <textarea id="f-msg" name="message" placeholder="Tell us about your organization and goals…"></textarea>
+          </div>
+          <button class="btn btn-dark" type="submit">
+            Request Free Quote
+            <span class="circ"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <h3>Your trusted partner in<br>organizational consulting &amp; change.</h3>
+          <a class="btn btn-light" href="#contact">
+            Request Free Quote
+            <span class="circ"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+          <div class="socials">
+            <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1.6 2H8l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.2-.1 1.6-.1 4.8-.1zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 8.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13.1H3.5V9h3.6v11.5z"/></svg></a>
+          </div>
+        </div>
+        <div class="foot-cols">
+          <div class="foot-col">
+            <p class="t">Quick Links</p>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#services">Projects</a></li>
+              <li><a href="#top">Testimonials</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="foot-col">
+            <p class="t">Contact Us</p>
+            <ul>
+              <li>Raleigh, United States</li>
+              <li><a href="tel:+19512390523">+1 (951) 239-0523</a></li>
+              <li><a href="mailto:inquiry@consultablelabs.com">inquiry@consultablelabs.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot-divider"></div>
+      <div class="foot-bottom">
+        <span>© 2026 Consultable Labs. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hero word-by-word blur reveal (matches the original Framer effect)
+    requestAnimationFrame(() => document.getElementById('heroTitle').classList.add('words-in'));
+
+    // Fade + rise on scroll (Framer appear effect)
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      }
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fx').forEach(el => io.observe(el));
+
+    // Nav gains a dark blur background once scrolled past the hero top
+    const header = document.getElementById('header');
+    addEventListener('scroll', () => header.classList.toggle('solid', scrollY > 40), { passive: true });
+
+    // FAQ accordion (one open at a time, animated height)
+    const items = document.querySelectorAll('.faq-item');
+    function setOpen(item, open) {
+      const a = item.querySelector('.faq-a');
+      item.classList.toggle('open', open);
+      item.querySelector('.faq-q').setAttribute('aria-expanded', open);
+      a.style.maxHeight = open ? a.scrollHeight + 'px' : '0px';
+    }
+    items.forEach(item => {
+      setOpen(item, item.classList.contains('open'));
+      item.querySelector('.faq-q').addEventListener('click', () => {
+        const willOpen = !item.classList.contains('open');
+        items.forEach(o => setOpen(o, false));
+        if (willOpen) setOpen(item, true);
+      });
+    });
+
+    // Mobile menu
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Contact form → opens a pre-filled email to inquiry@consultablelabs.com
+    document.getElementById('quoteForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.target;
+      const body = [
+        'Full Name: ' + f.name.value,
+        'Email: ' + f.email.value,
+        'Phone: ' + (f.phone.value || '—'),
+        'Project Location: ' + f.location.value,
+        'Type of Project: ' + f.type.value,
+        '',
+        f.message.value
+      ].join('\n');
+      location.href = 'mailto:inquiry@consultablelabs.com?subject=' +
+        encodeURIComponent('Free Quote Request — ' + f.name.value) +
+        '&body=' + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
